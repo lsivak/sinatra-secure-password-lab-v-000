@@ -37,6 +37,7 @@ end
       session[:user_id] = user.id
       redirect "/account"
     elsif user.username == ""
+      redirect "failure"
     else
       redirect "failure"
   end
