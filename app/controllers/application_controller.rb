@@ -36,6 +36,7 @@ end
      if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       redirect "/account"
+    elsif user.username == ""
     else
       redirect "failure"
   end
