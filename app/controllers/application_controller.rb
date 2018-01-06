@@ -23,8 +23,9 @@ binding.pry
     if user.save
       binding.pry
        redirect "/login"
-   else
+   elsif user.id == nil
        redirect "/failure"
+     else
     end
 end
 
