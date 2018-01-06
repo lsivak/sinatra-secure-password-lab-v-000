@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     if user.save
       # binding.pry
        redirect "/login"
-   elsif user.username == nil
+   elsif user == nil
        redirect "/failure"
      else
     end
